@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  const ime = 'Manuel Radaljac najjaci';
+  const ime = 'Manuel Radaljac';
   res.render('index', { title: 'Home', ime });
 });
 
