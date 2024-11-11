@@ -1,8 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head.ejs") %>
+
 <body>
-  <div class="">
-    <p>gallery</p>
-    <div class=""></div>
-    <div class=""></div>
-    <div class=""></div>
-  </div>
+    <div class="gallery">
+        <div>
+            <img src="https://www.metkovic.hr/wp-content/gallery/260724-skupna-izlozba-2/skupna-izlozba-33.jpg" alt="Image 1">
+        </div>
+        <div>
+            <img src="https://www.metkovic.hr/wp-content/gallery/260724-skupna-izlozba-2/skupna-izlozba-33.jpg" alt="Image 2">
+        </div>
+        <div>
+            <img src="https://www.metkovic.hr/wp-content/gallery/260724-skupna-izlozba-2/skupna-izlozba-33.jpg" alt="Image 3">
+        </div>
+    </div>
+    <%- include("./partials/footer.ejs") %>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            place-content: center;
+            place-items: center;
+        }
+        .gallery div {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </body>
+</html>

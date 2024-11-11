@@ -24,8 +24,3 @@ app.get('/gallery', (req, res) => {
 app.get('/contact', (req, res) => {
   res.render('contact', { title: 'Kontakt stranica' });
 });
-
-// 404 page
-app.use((req, res) => {
-  res.status(404).render('404', { title: '404' });
-});
