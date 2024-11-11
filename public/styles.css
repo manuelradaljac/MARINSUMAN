@@ -1,9 +1,13 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px;
+    padding: 1em;
 }
 
 .navbar a {
@@ -70,6 +74,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1em;
+    text-align: center;
 }
 
 .contact button {
@@ -96,3 +101,8 @@
     justify-content: center;
     align-items: center;
 }
+
+.code{
+    text-align: center;
+}
+
